@@ -1,0 +1,7 @@
+my.content:
+  path: '/hello1'
+  defaults:
+    _controller: '\Drupal\my_module\Controller\MyModuleController::content'
+    _title: '自定义模块01'
+  requirements:
+    _permission: 'administer site configuration' #administer site configuration/access content

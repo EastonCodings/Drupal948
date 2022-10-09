@@ -1,0 +1,21 @@
+fridayevent.admin_settings:
+  title: 'FridayEvent List Settings'
+  description: 'control the display of the FridayEvent form'
+  route_name: fridayevent.admin_settings
+  parent: system.admin_config_content
+  weight: 10
+
+fridayevent.report:
+  title: 'List of FridayEvent submissions'
+  description: 'View listing of FridayEvent'
+  route_name: fridayevent.report
+  parent: system.admin_reports
+  weight: 0
+
+fridayevent.newpage:
+  title: 'FridayEvent module settings'
+  description: 'FridayEvent page link'
+  #parent: system.admin_config_development
+  route_name: fridayevent.form
+  weight: -100
+  menu_name: main

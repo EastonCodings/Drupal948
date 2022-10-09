@@ -1,0 +1,8 @@
+style:
+  version: 1.x
+  #core_version_requirement: ^9
+  css:
+    layout:
+      css/style.css: {}
+    theme:
+      css/style.css: {}

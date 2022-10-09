@@ -1,0 +1,10 @@
+view fridayevent:
+  title: 'view fridayevent form'
+  description: 'view and submit the fridayevent form'
+access fridayevent report:
+  title: 'access list of fridayevent'
+  description: 'view the report listing all fridayevent submitted'
+administer fridayevent:
+  title: 'adminnister fridayevent settings'
+  description: 'access the fridayevent adminnistrative settings page'
+  restrict access: true

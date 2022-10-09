@@ -1,0 +1,7 @@
+name: Friday Event Module
+type: module
+package: Custom
+description: 'allows users to FridayEvent for enevts and provides a contact list for admin'
+version: 1.0
+core_version_requirement: ^9 #*
+congifure: fridayevent.admin_settings

@@ -1,0 +1,12 @@
+name: My Second Module #*
+description: 第二个模块
+package: Custom
+type: module #*
+core_version_requirement: ^9 #*
+
+dependencies:
+  - drupal:link
+  - drupal:views
+
+test_dependencies:
+ - drupal:image

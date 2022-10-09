@@ -1,0 +1,23 @@
+fridayevent.form:
+  path: '/fridayevent'
+  defaults:
+    _form: '\Drupal\fridayevent\Form\RSVPForm'
+    _title: 'FridayEvent to this Event'
+  requirements:
+    _permission: 'view fridayevent' #administer site configuration/access content
+
+fridayevent.admin_settings:
+  path: '/admin/config/content/fridayevent'
+  defaults:
+    _form: '\Drupal\fridayevent\Form\RSVPSettingsForm'
+    _title: 'FridayEvent list Settings'
+  requirements:
+    _permission: 'administer fridayevent'
+
+fridayevent.report:
+  path: '/admin/reports/fridayevent'
+  defaults:
+    _controller: '\Drupal\fridayevent\Controller\ReportController::report'
+    _title: 'List of FridayEvent'
+  requirements:
+    _permission: 'view fridayevent'

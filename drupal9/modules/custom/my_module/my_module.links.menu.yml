@@ -1,0 +1,6 @@
+hello1.newpage:
+  title: 'My First Module Stuff'
+  description: 'Link to the page First Module created'
+  route_name: my.content
+  weight: -100
+  menu_name: main

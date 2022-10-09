@@ -1,0 +1,5 @@
+name: Final module
+type: module
+package: Custom
+description: 'My Final Drupal module'
+core_version_requirement: ^9 #*

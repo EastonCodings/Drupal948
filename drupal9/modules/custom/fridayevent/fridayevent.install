@@ -1,0 +1,77 @@
+<?php
+/**
+ * Implements hook_schema().
+ *
+ */
+function fridayevent_schema() {
+  $schema['fridayevent'] = array(
+    'description' => 'Stores name, age, email, timestamp, nid and uid for an FridayEvent',
+    'fields' => array(
+      'id' => array(
+        'description' => 'The primary identifier for the record.',
+        'type' => 'varchar',
+        'length' => 128,
+        'not null' => TRUE,
+        'default' => '',
+      ),
+      'uid' => array(
+        'description' => 'The {users}.uid that added this FridayEvent.',
+        'type' => 'int',
+        'not null' => TRUE,
+        'default' => 0,
+      ),
+      'nid' => array(
+        'description' => 'The {node} .nid for this FridayEvent.',
+        'type' => 'varchar',
+        'length' => 64,
+        'not null' => FALSE,
+        'default' => 0,
+      ),
+      'name' => array(
+        'description' => 'User\'s Name.',
+        'type' => 'varchar',
+        'length' => 64,
+        'not null' => TRUE,
+        'default' => '',
+      ),
+      'age' => array(
+        'description' => 'User\'s Age.',
+        'type' => 'int',
+        'not null' => TRUE,
+        'default' => 0,
+      ),
+      'mail' => array(
+        'description' => 'User\'s email address.',
+        'type' => 'varchar',
+        'length' => 64,
+        'not null' => TRUE,
+        'default' => '',
+      ),
+      'created' => array(
+        'type' => 'varchar',
+        'length' => 64,
+        'not null' => TRUE,
+        'default' => '',
+        'description' => 'Timestamp for when FridayEvent was created.',
+      ),
+    ),
+    'primary key' => array('id'),
+    'indexes' => array(
+      'node' => array('nid'),
+      'node_user' => array('nid', 'uid'),
+    ),
+  );
+ $schema['fridayevent_enabled'] = array(
+    'description' => 'Tracks whether fridayevent is enabled for a node.',
+    'fields' => array(
+      'nid' => array(
+        'description' => 'The {node}.nid that has fridayevent enabled.',
+        'type' => 'int',
+        'not null' => TRUE,
+        'default' => 0,
+      ),
+    ),
+    'primary key' => array('nid'),
+  );
+  return $schema;
+}

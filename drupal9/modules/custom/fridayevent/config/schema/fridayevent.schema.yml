@@ -1,0 +1,12 @@
+# Schema for the configuration file of fridayevent module.
+
+fridayevent.settings:
+  type: config_object
+  label: 'RSVP Module Content Type Settings'
+  mapping:
+    allowed_types:
+      type: sequence
+      label: 'Content types RSVP Form can display on'
+      sequence:
+        type: string
+        label: 'Content type'
