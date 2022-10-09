@@ -20,6 +20,7 @@
         "drupal/core-project-message": "^9.4",
         "drupal/core-recommended": "^9.4",
         "drupal/core-vendor-hardening": "^9.4",
+        "drupal/http_client_manager": "^9.3",
         "drush/drush": "^11.2"
     },
     "conflict": {
