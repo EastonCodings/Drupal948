@@ -1,0 +1,6 @@
+name: Weather
+dependencies: {  }
+description: 'A weather module to show a location weather in given days.'
+core_version_requirement: ^9
+package: Custom
+type: module

@@ -1,0 +1,23 @@
+<?php
+/**
+ * @file
+ * weather.module
+ */
+function weather_theme() {
+  $theme['weather_current_conditions'] = [
+    'variables' => [
+      'collection' => NULL,
+      'location' => NULL,
+    ],
+    'template' => 'weather-current-conditions'
+  ];
+  $theme['weather_date'] = [
+    'variables' => [
+      'collection' => NULL,
+      'date' => NULL,
+    ],
+    'template' => 'weather-date'
+  ];
+
+  return $theme;
+}

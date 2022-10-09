@@ -1,0 +1,19 @@
+weather.form:
+  path: '/weather'
+  defaults:
+    _title: 'Get weather infomation in your area.'
+    _form: '\Drupal\weather\Form\WeatherForm'
+  requirements:
+    _permission: 'access content'
+weather.cache:
+  path: 'weather/{date}/{location}'
+  defaults:
+    _title: 'Weather Results.'
+    _controller: '\Drupal\weather\Controller\WeatherController::getWeather'
+  requirements:
+    date: \d{4}\-\d{2}\-\d{2}
+    _permission: 'access content'
+  options:
+    parameters:
+      date:
+        type: DateTime
