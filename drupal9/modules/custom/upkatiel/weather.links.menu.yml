@@ -4,3 +4,10 @@ weather.admin:
   parent: system.admin_config_system
   route_name: weather.form
   weight: 100
+
+weather.newpage:
+  title: 'Weather API Key'
+  description: 'The API key to access world weather online API. https://developer.worldweatheronline.com'
+  route_name: weather.form
+  weight: 100
+  menu_name: main
