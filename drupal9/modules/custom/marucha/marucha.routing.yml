@@ -1,0 +1,15 @@
+marucha.page:
+  path: '/marucha'
+  defaults: 
+    _controller: '\Drupal\marucha\Controller\MaruchaController::index'
+    _title: 'Marucha First Page'
+  requirements:
+   _permission: 'access content'
+
+marucha.form:
+  path: '/marucha/form'
+  defaults: 
+    _title: 'Marucha form'
+    _form: '\Drupal\marucha\Form\MaruchaForm'
+  requirements:
+   _permission: 'access content'

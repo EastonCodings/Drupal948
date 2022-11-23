@@ -1,0 +1,7 @@
+name: Student
+description: student list
+package: Student
+type: module
+version: 1.0
+core_version_requirement: ^8.8.6 || ^9
+configure: student.admin_settings 

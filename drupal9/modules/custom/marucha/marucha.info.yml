@@ -1,0 +1,4 @@
+name: "Marucha Custom Module"
+description: "this is"
+type: module
+core_version_requirement: ^9

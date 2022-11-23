@@ -1,0 +1,10 @@
+view student:
+  title: 'View  student Form'
+  description: 'View and Submit the  student Form'
+access student report:
+  title: 'Access list of  students'
+  description: 'View the report listing all  students submitted.'
+administer student:
+ title: 'administer  student Settings'
+ description: 'Access the  student administrative settings page.'
+ restrict access: true    

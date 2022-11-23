@@ -1,0 +1,7 @@
+name: Sent Form
+type: module
+package: sentform
+description: 'Form Submission: Includes name, age, email address fields and is required'
+version: 1.0
+core_version_requirement: ^9 #*
+congifure: sentform.admin_settings

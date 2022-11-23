@@ -1,0 +1,21 @@
+student.form:
+  path: '/student'
+  defaults:
+    _form: '\Drupal\student\Form\StudentForm'
+    _title: 'Student List Settings'
+  requirements:
+    _permission: 'view student'
+student.admin_settings:
+  path: '/admin/config/content/student'
+  defaults:
+    _form: '\Drupal\student\Form\StudentSettingsForm'
+    _title: 'Student List Settings'
+  requirements:
+    _permission: 'administer student'  
+student.report:
+  path: '/admin/reports/student'
+  defaults:
+    _controller: '\Drupal\student\Controller\ReportController::report'
+    _title: 'List of Students'
+  requirements:
+    _permission: 'view student'  

@@ -1,0 +1,15 @@
+sentform.form:
+  path: '/sentform'
+  defaults:
+    _form: '\Drupal\sentform\Form\SentForm'
+    _title: 'Please submit your form'
+  requirements:
+    _permission: 'view sentform'
+
+sentform.admin_settings:
+  path: '/admin/config/content/sentform'
+  defaults:
+    _form: '\Drupal\sentform\Form\sentformSettingsForm'
+    _title: 'SentForm List Settings'
+  requirements:
+    _permission: 'administer sentform'

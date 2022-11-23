@@ -1,0 +1,9 @@
+services:
+  marucha.config_subscriber:
+    class: '\Drupal\marucha\EventSubscriber\ConfigSubscriber'
+    tags:
+      - { name: 'event_subscriber' }
+
+  plugin.manager.tapioca:
+    class: '\Drupal\marucha\TapiocaPluginManager'
+    parent: default_plugin_manager
