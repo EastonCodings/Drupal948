@@ -1,0 +1,73 @@
+<?php
+/**
+ * Implements hook_schema().
+ *
+ */
+function student_schema() {
+
+	$schema['student'] = array(
+     'description' => 'Stores email , name,age, nid and uid for an student list',
+     'fields' => array(
+     	 'id' => array(
+		     	 	  'description' => 'The primairy identifier for the record',
+		     	 	  'type' => 'serial',
+		     	 	  'unsigned' => TRUE,
+		     	 	  'not null' => TRUE ),
+     	 'uid' => array(
+		     	 	  'description' => 'The {user}.uid that added this student.',
+		     	 	  'type' => 'int',
+		     	 	  'not null' => TRUE,
+		     	 	  'default' => 0 ),
+     	  'nid' => array(
+		     	 	  'description' => 'The {node}.nid for this student.',
+		     	 	  'type' => 'varchar',
+		     	 	  'length' => 64,
+		     	 	  'not null' => FALSE,
+		     	 	  'default' => 0 ),
+		'name' => array(
+		     	 	  'description' => 'User name.',
+		     	 	  'type' => 'varchar',
+		     	 	  'length' => 64,
+		     	 	  'not null' => FALSE,
+		     	 	  'default' => '' ),
+		'age' => array(
+		     	 	  'description' => 'User age.',
+		     	 	  'type' => 'int',
+		     	 	  'not null' => TRUE,
+		     	 	  'default' => 0 ),
+     	  'mail' => array(
+		     	 	  'description' => 'User email address.',
+		     	 	  'type' => 'varchar',
+		     	 	  'length' => 64,
+		     	 	  'not null' => FALSE,
+		     	 	  'default' => '' ),
+     	  'created' => array(
+                'type' => 'int',
+                'not null' => TRUE,
+                'default' => 0,
+                'description' => 'Timestamp for when student was created.',
+     	        )
+
+     ),
+     'primary key' => array('id'),
+     'indexes'  => array(
+				       'node' => array('nid'),
+				       'node_user' => array('nid', 'uid'),
+
+     ) 
+	);
+  $schema['student_enabled'] = array(
+     'description' => 'Stores email , timestamp, nid and uid for an student',
+     'fields' => array(
+     	 'nid' => array(
+		     	 	  'description' => 'The primairy identifier for the record',
+		     	 	  'type' => 'int',
+		     	 	  'not null' => TRUE,
+		     	 	   'default' => 0)
+     	),
+     'primary key' => array('nid')
+   );
+return $schema;
+
+
+}

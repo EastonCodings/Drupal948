@@ -1,0 +1,12 @@
+student.admin_settings:
+  title: 'Student List Settings'
+  description: 'Control the display of Student Form'
+  route_name: student.admin_settings
+  parent: system.admin_config_content
+  weight: 10
+student.report:
+ title: 'List of Student Submissions'
+ description: 'View list of Students'
+ route_name: student.report
+ parent: system.admin_reports
+ weight: 0  

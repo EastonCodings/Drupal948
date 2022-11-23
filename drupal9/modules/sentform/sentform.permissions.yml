@@ -1,0 +1,10 @@
+view sentformlist:
+  title: 'View Sent Form'
+  description: 'View and Submit the Form'
+access sentform report:
+  title: 'Access List of SentForm'
+  description: 'View the report listing all Form submitted.'
+administer sentform:
+  title: 'Administer SentForm Settings'
+  description: 'Access the SentForm administrative settings page'
+  restrict access: true
